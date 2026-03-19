@@ -1,15 +1,690 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Portfolio</title>
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rohan Patil — Technical Manager, Fullstack Developer & IT Consultant with 13+ years of experience in NodeJS, ReactJS, PHP, AWS, Azure and AI." />
+  <meta name="author" content="Rohan Patil" />
+  <title>Rohan Patil — Portfolio</title>
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
 <body>
 
-<h1>Dev Webol</h1>
-<p>Full Stack Developer</p>
+  <!-- ░░ Animated Background ░░ -->
+  <div class="bg-canvas">
+    <div class="bg-orb"></div>
+    <div class="bg-orb"></div>
+    <div class="bg-orb"></div>
+  </div>
+  <div class="bg-grid"></div>
+  <canvas id="particles" style="position:fixed;inset:0;z-index:0;pointer-events:none;opacity:0.6;"></canvas>
 
-<p>Python | NodeJS | PHP | AWS | MySQL | MongoDB| AI</p>
+  <!-- ░░ Navigation ░░ -->
+  <nav>
+    <div class="container nav-inner">
+      <span class="nav-logo">&lt;RP /&gt;</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
 
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- HERO                                                       -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Left: Text -->
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Available for opportunities
+          </div>
+
+          <h1 class="hero-name">
+            Rohan<br>
+            <span class="gradient-text">Patil</span>
+          </h1>
+
+          <div class="hero-title" id="typed-title">
+            <span class="typed-text">Technical Manager</span><span class="typed-cursor">|</span>
+          </div>
+
+          <p class="hero-desc">
+            Fullstack Developer &amp; IT Consultant with <strong>13+ years</strong> of experience
+            delivering cloud-native, AI-powered solutions across startups and enterprises.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Get in Touch
+            </a>
+            <a href="cv.pdf" class="btn btn-outline" target="_blank" rel="noopener">
+              <i class="fas fa-file-arrow-down"></i> Download CV
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number" data-target="13">0+</div>
+              <div class="stat-label">Years Exp.</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="30">0+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="5">0+</div>
+              <div class="stat-label">Countries</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Avatar -->
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-ring"></div>
+            <!-- Initials fallback — replace src with a real photo if available -->
+            <div class="avatar-fallback">RP</div>
+
+            <!-- Floating badges -->
+            <div class="floating-badge">
+              <span class="badge-icon">☁️</span>
+              <span>AWS Certified</span>
+            </div>
+            <div class="floating-badge">
+              <span class="badge-icon">🤖</span>
+              <span>AI / ML</span>
+            </div>
+            <div class="floating-badge">
+              <span class="badge-icon">⚡</span>
+              <span>13+ Years</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- ABOUT                                                      -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-text reveal-left">
+          <div class="section-tag">// about me</div>
+          <h2 class="section-title" style="text-align:left;margin-bottom:24px;">
+            Building the <span class="gradient-text">future</span>,<br>one commit at a time
+          </h2>
+          <p>
+            I'm a Technical Manager and Fullstack Developer based in Mumbai, India, with over
+            <strong>13 years</strong> of hands-on experience building scalable web applications,
+            cloud infrastructure, and AI-powered pipelines.
+          </p>
+          <p>
+            I've led end-to-end delivery for clients across fintech, healthcare, e-commerce, and
+            entertainment — including an <strong>onsite engagement at Emirates National Bank of Dubai</strong>.
+          </p>
+          <p>
+            My current focus is combining <strong>fullstack engineering</strong> with
+            <strong>cloud-native AI</strong> — building serverless LLM pipelines on AWS Bedrock
+            and exploring agentic architectures.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🏦</span>
+              <span class="highlight-text">Emirates NBD — Onsite</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🤖</span>
+              <span class="highlight-text">AWS Bedrock AI Pipelines</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🌍</span>
+              <span class="highlight-text">Global Client Delivery</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🏅</span>
+              <span class="highlight-text">AWS AI Practitioner</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual reveal-right">
+          <div class="about-card">
+            <div class="about-card-icon">🚀</div>
+            <div class="about-card-number" data-target="13">0</div>
+            <div class="about-card-label">Years of Experience</div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">💼</div>
+            <div class="about-card-number" data-target="30">0</div>
+            <div class="about-card-label">Projects Delivered</div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">☁️</div>
+            <div class="about-card-number" data-target="2">0</div>
+            <div class="about-card-label">Cloud Platforms</div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🌐</div>
+            <div class="about-card-number" data-target="5">0</div>
+            <div class="about-card-label">Countries Served</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- SKILLS                                                     -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">// tech stack</div>
+        <h2 class="section-title">Tools &amp; <span class="gradient-text">Technologies</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-desc">A curated set of technologies I use to build, scale, and ship products.</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-category reveal delay-1">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">⚙️</span>
+            <span class="skill-cat-name">Backend</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Laravel</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Drupal 8</span>
+            <span class="skill-tag">Loopback</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal delay-2">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🎨</span>
+            <span class="skill-cat-name">Frontend</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal delay-3">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">☁️</span>
+            <span class="skill-cat-name">AWS</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">EC2</span>
+            <span class="skill-tag">S3</span>
+            <span class="skill-tag">CloudFront</span>
+            <span class="skill-tag">RDS</span>
+            <span class="skill-tag">VPC</span>
+            <span class="skill-tag">Route53</span>
+            <span class="skill-tag">Bedrock</span>
+            <span class="skill-tag">Lambda</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal delay-1">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🔷</span>
+            <span class="skill-cat-name">Azure</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Virtual Machines</span>
+            <span class="skill-tag">Blob Storage</span>
+            <span class="skill-tag">CDN</span>
+            <span class="skill-tag">SQL Database</span>
+            <span class="skill-tag">Virtual Network</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal delay-2">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🗄️</span>
+            <span class="skill-cat-name">Databases</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Vector Databases</span>
+            <span class="skill-tag">Qdrant</span>
+            <span class="skill-tag">Chroma</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal delay-3">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🤖</span>
+            <span class="skill-cat-name">AI / DevOps</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS Bedrock</span>
+            <span class="skill-tag">LLM Pipelines</span>
+            <span class="skill-tag">LRS / xAPI</span>
+            <span class="skill-tag">Reranker</span>
+            <span class="skill-tag">BM25 Keyword search</span>
+            <span class="skill-tag">Apigee</span>
+            <span class="skill-tag">Scrum</span>
+            <span class="skill-tag">VtigerCRM</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- EXPERIENCE                                                 -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">// career</div>
+        <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Webol Solutions -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-role">Technical Manager</span>
+              <span class="timeline-period">Dec 2021 — Present</span>
+            </div>
+            <div class="timeline-company">
+              <i class="fas fa-building"></i> Webol Solutions Pvt Ltd
+            </div>
+            <ul class="timeline-achievements">
+              <li>Architected and delivered web applications for multiple clients using PHP, JavaScript, Node.js, and React.js.</li>
+              <li>Managed AWS infrastructure: EC2, S3, CloudFront, RDS, VPC, Route53 with security best practices.</li>
+              <li>Managed Azure services: VMs, Blob Storage, CDN, SQL Database, Virtual Networks.</li>
+              <li>Built serverless AI pipelines on AWS Bedrock for text and image generation.</li>
+            </ul>
+            <div class="project-chips">
+              <span class="project-chip">Duetrade</span>
+              <span class="project-chip">Xedaq</span>
+              <span class="project-chip">6633Ultra</span>
+              <span class="project-chip">PartSync</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Neosoft Team Leader -->
+        <div class="timeline-item">
+          <div class="timeline-dot purple"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-role">Team Leader</span>
+              <span class="timeline-period">Apr 2016 — Dec 2021</span>
+            </div>
+            <div class="timeline-company">
+              <i class="fas fa-building"></i> Neosoft Technologies · Mumbai
+            </div>
+            <ul class="timeline-achievements">
+              <li>Spearheaded multiple high-impact projects, guiding teams through the full development lifecycle.</li>
+              <li><strong>Collecticity</strong> — Led development of a crowdfunding platform using Node.js Loopback and MongoDB.</li>
+              <li><strong>IIFL / IIFL Finance</strong> — Developed content-rich financial websites using Drupal 8.</li>
+              <li>Onsite engagement at <strong>Emirates National Bank of Dubai</strong> (2017–2018).</li>
+            </ul>
+            <div class="project-chips">
+              <span class="project-chip">Collecticity</span>
+              <span class="project-chip">IIFL Finance</span>
+              <span class="project-chip">Emirates NBD 🇦🇪</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Neosoft Programmer -->
+        <div class="timeline-item">
+          <div class="timeline-dot cyan"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-role">Programmer</span>
+              <span class="timeline-period">Apr 2012 — Apr 2016</span>
+            </div>
+            <div class="timeline-company">
+              <i class="fas fa-building"></i> Neosoft Technologies · Mumbai
+            </div>
+            <ul class="timeline-achievements">
+              <li><strong>eSeaGrant</strong> — Deployed Vtiger-based project management tools for US universities (MIT, UNH, Washington).</li>
+              <li><strong>Texasbullion</strong> — Engineered a precious metals trading exchange with real-time pricing APIs.</li>
+              <li><strong>Hungama</strong> — Built an automation tool to deliver media content to Apple Music &amp; mobile operators with recursive billing. <em>(Onsite 2014–2015)</em></li>
+            </ul>
+            <div class="project-chips">
+              <span class="project-chip">eSeaGrant</span>
+              <span class="project-chip">Texasbullion</span>
+              <span class="project-chip">Hungama 🎵</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- PROJECTS                                                   -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">// personal projects</div>
+        <h2 class="section-title">Key <span class="gradient-text">Projects</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-desc">Side projects I've built to solve real problems and explore new tech.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal delay-1">
+          <div class="project-icon">⏱️</div>
+          <div class="project-name">Focus Countdown</div>
+          <div class="project-desc">
+            A Google Chrome Extension that helps users manage focused work sessions with a
+            customisable Pomodoro-style countdown timer. Boosts productivity directly from the browser toolbar.
+          </div>
+          <div class="project-tech">
+            <span>Chrome Extension</span>
+            <span>JavaScript</span>
+            <span>HTML/CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://chromewebstore.google.com/detail/focus-countdown/djamkcmjohacfoeohmlkdejllihekbab?utm_source=item-share-cb&pli=1" class="project-link" target="_blank" rel="noopener">
+              <i class="fab fa-chrome"></i> View on Chrome Web Store
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-2">
+          <div class="project-icon">🚪</div>
+          <div class="project-name">Hodor</div>
+          <div class="project-desc">
+            A Google Chrome Extension for smart tab and session management. Keeps your browser
+            organised by grouping, saving, and restoring tab sessions with a single click.
+          </div>
+          <div class="project-tech">
+            <span>Chrome Extension</span>
+            <span>JavaScript</span>
+            <span>Chrome APIs</span>
+          </div>
+          <div class="project-links">
+            <a href="https://chromewebstore.google.com/detail/hodor/opdfabenikhlkaijpidfhccnnelppepf" class="project-link" target="_blank" rel="noopener">
+              <i class="fab fa-chrome"></i> View on Chrome Web Store
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-3">
+          <div class="project-icon">🌤️</div>
+          <div class="project-name">Weather Widget</div>
+          <div class="project-desc">
+            A lightweight Google Chrome Extension that displays real-time weather information
+            in the new-tab page. Clean UI with location-based forecasts and condition icons.
+          </div>
+          <div class="project-tech">
+            <span>Chrome Extension</span>
+            <span>Weather API</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://chromewebstore.google.com/detail/weather-widget/cbfonhkeidkoldmfnffmpejogimdjknc" class="project-link" target="_blank" rel="noopener">
+              <i class="fab fa-chrome"></i> View on Chrome Web Store
+            </a>
+          </div>
+        </div>
+
+        <!-- Bonus: AI Projects from the learning repo -->
+        <div class="project-card reveal delay-1">
+          <div class="project-icon">🧠</div>
+          <div class="project-name">AI Meeting Summariser</div>
+          <div class="project-desc">
+            A FastAPI + LangChain pipeline that ingests meeting transcripts and produces
+            structured summaries with action items, decisions, and key highlights.
+          </div>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>LangChain</span>
+            <span>Docker</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/silypointer" class="project-link" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-2">
+          <div class="project-icon">📋</div>
+          <div class="project-name">AI Todo Agent</div>
+          <div class="project-desc">
+            An agentic Node.js todo application powered by OpenRouter LLMs. Uses a tool-calling
+            agent to manage tasks via natural language with PostgreSQL persistence.
+          </div>
+          <div class="project-tech">
+            <span>Node.js</span>
+            <span>OpenRouter</span>
+            <span>PostgreSQL</span>
+            <span>LLM Agents</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/silypointer" class="project-link" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-3">
+          <div class="project-icon">🔍</div>
+          <div class="project-name">Enterprise Policy Q&amp;A</div>
+          <div class="project-desc">
+            A RAG-based Q&amp;A system for enterprise policy documents. Supports PDF ingestion,
+            semantic retrieval, re-ranking, and LLM-generated answers with evaluation metrics.
+          </div>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>RAG</span>
+            <span>Vector DB</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/silypointer" class="project-link" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- EDUCATION                                                  -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">// education &amp; certs</div>
+        <h2 class="section-title">Learning &amp; <span class="gradient-text">Credentials</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="edu-grid">
+
+        <div class="edu-card reveal delay-1">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-degree">PG in E-Business</div>
+          <div class="edu-school">Welingkar's Institute of Management</div>
+          <div class="edu-year"><i class="fas fa-calendar"></i> 2014 – 2016</div>
+          <span class="edu-score">71%</span>
+        </div>
+
+        <div class="edu-card reveal delay-2">
+          <div class="edu-icon">🏛️</div>
+          <div class="edu-degree">BE in Information Technology</div>
+          <div class="edu-school">Mumbai University</div>
+          <div class="edu-year"><i class="fas fa-calendar"></i> 2007 – 2012</div>
+          <span class="edu-score">60%</span>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🏅</div>
+          <div class="cert-info">
+            <div class="cert-name">AWS Certified AI Practitioner</div>
+            <div class="cert-issuer">Amazon Web Services</div>
+            <div class="cert-validity">
+              <i class="fas fa-shield-check"></i>
+              Valid: Nov 2025 – Nov 2028 &nbsp;·&nbsp; ID: 7a5b7e12eef8476ebcae72634ccf2d87
+            </div>
+            <a
+              href="https://cp.certmetrics.com/amazon/en/public/verify/credential/7a5b7e12eef8476ebcae72634ccf2d87"
+              class="cert-verify"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fas fa-external-link-alt"></i> Verify Credential
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Current Focus -->
+      <div style="margin-top:64px;" class="reveal">
+        <div class="section-header" style="margin-bottom:32px;">
+          <div class="section-tag">// currently learning</div>
+          <h3 class="section-title" style="font-size:1.8rem;">
+            Current <span class="gradient-text">Focus</span>
+          </h3>
+        </div>
+        <div class="skills-grid" style="grid-template-columns:repeat(4,1fr);">
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🤖</span>
+              <span class="skill-cat-name">Agentic AI</span>
+            </div>
+            <p style="color:var(--text-secondary);font-size:0.85rem;">Building LLM agents with tool-calling, RAG, and multi-step reasoning on AWS Bedrock.</p>
+          </div>
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">☁️</span>
+              <span class="skill-cat-name">Serverless</span>
+            </div>
+            <p style="color:var(--text-secondary);font-size:0.85rem;">Deepening expertise in serverless and microservice architectures on AWS Lambda &amp; ECS.</p>
+          </div>
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🐍</span>
+              <span class="skill-cat-name">Python / FastAPI</span>
+            </div>
+            <p style="color:var(--text-secondary);font-size:0.85rem;">Expanding Python skills for AI backend services, data pipelines, and API development.</p>
+          </div>
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">📱</span>
+              <span class="skill-cat-name">Flutter</span>
+            </div>
+            <p style="color:var(--text-secondary);font-size:0.85rem;">Exploring Flutter for cross-platform mobile development with native performance.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- CONTACT                                                    -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="section-header reveal">
+          <div class="section-tag">// contact</div>
+          <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-desc">
+            Open to freelance projects, full-time roles, and interesting collaborations.
+            Drop me a message — I usually respond within 24 hours.
+          </p>
+        </div>
+
+        <div class="contact-cards reveal">
+          <a href="mailto:rohanbpatil77@gmail.com" class="contact-card">
+            <div class="contact-card-icon">📧</div>
+            <div class="contact-card-label">Email</div>
+            <div class="contact-card-value">rohanbpatil77@gmail.com</div>
+          </a>
+          <a href="https://github.com/silypointer" class="contact-card" target="_blank" rel="noopener">
+            <div class="contact-card-icon">🐙</div>
+            <div class="contact-card-label">GitHub</div>
+            <div class="contact-card-value">github.com/silypointer</div>
+          </a>
+          <a href="tel:+919833646644" class="contact-card">
+            <div class="contact-card-icon">📱</div>
+            <div class="contact-card-label">Phone</div>
+            <div class="contact-card-value">+91 98336 46644</div>
+          </a>
+        </div>
+
+        <div class="contact-cta reveal">
+          <em>"Combining fullstack, cloud, and AI skills to deliver innovative, business-focused solutions."</em>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ Footer ░░ -->
+  <footer>
+    <div class="container">
+      <p>Designed &amp; built by <span>Rohan Patil</span> · Mumbai, India · 2026</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
 </body>
 </html>

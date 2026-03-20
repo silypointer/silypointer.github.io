@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rohan Patil — AI Proof of Concept Projects: RAG pipelines, LLM agents, serverless AI, and automated summarization." />
+  <meta name="author" content="Rohan Patil" />
+  <title>AI PoC Projects — Rohan Patil</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Shared portfolio styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+
+  <!-- ░░ Animated Background ░░ -->
+  <div class="bg-canvas">
+    <div class="bg-orb"></div>
+    <div class="bg-orb"></div>
+    <div class="bg-orb"></div>
+  </div>
+  <div class="bg-grid"></div>
+  <canvas id="particles" style="position:fixed;inset:0;z-index:0;pointer-events:none;opacity:0.6;"></canvas>
+
+  <!-- ░░ Navigation ░░ -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">&lt;RP /&gt;</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="ai-poc-projects.html">AI PoCs</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- HERO                                                       -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="poc-hero">
+    <div class="container">
+      <div class="poc-hero-inner">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Experimental AI Engineering
+        </div>
+
+        <h1>
+          AI <span class="gradient-text">Proof of Concept</span><br>Projects
+        </h1>
+
+        <p>
+          A collection of hands-on AI systems built to explore LLM workflows, RAG pipelines,
+          agentic architectures, and serverless AI execution on AWS. Each PoC targets a
+          real-world problem and demonstrates a distinct AI engineering pattern.
+        </p>
+
+        <div class="hero-actions" style="margin-bottom:36px;">
+          <a href="https://github.com/silypointer" class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+          <a href="index.html" class="btn btn-outline">
+            <i class="fas fa-arrow-left"></i> Back to Portfolio
+          </a>
+        </div>
+
+        <div class="poc-hero-stats">
+          <div class="stat-item">
+            <div class="stat-number" data-target="4">0</div>
+            <div class="stat-label">PoC Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-label">AI Patterns</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="5">0</div>
+            <div class="stat-label">Cloud Services</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- PROJECTS                                                   -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="projects">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <div class="section-tag">// poc projects</div>
+        <h2 class="section-title">AI <span class="gradient-text">Systems</span> Built</h2>
+        <div class="section-divider"></div>
+        <p class="section-desc">Four independent systems, each exploring a different AI engineering discipline.</p>
+      </div>
+
+      <div class="poc-list">
+
+        <!-- ══════════════════════════════════════════════════════ -->
+        <!-- PROJECT 1: AI Meeting Notes Summarizer                 -->
+        <!-- ══════════════════════════════════════════════════════ -->
+        <article class="poc-card reveal">
+          <div class="poc-header">
+            <div class="poc-icon">🧠</div>
+            <div class="poc-title-block">
+              <div class="poc-title">AI Meeting Notes Summarizer</div>
+              <div class="poc-subtitle">
+                A production-ready FastAPI + LangChain service that ingests meeting transcripts
+                and automatically generates structured notes — summaries, key decisions, and
+                action items with owners and deadlines.
+              </div>
+            </div>
+            <div class="poc-badges">
+              <span class="poc-badge poc-badge--summary"><i class="fas fa-file-lines"></i> Summarization</span>
+              <span class="poc-badge poc-badge--rag"><i class="fas fa-database"></i> Vector Store</span>
+            </div>
+          </div>
+
+          <div class="poc-body">
+            <div>
+              <div class="poc-section-label"><i class="fas fa-list-check"></i> Key Capabilities</div>
+              <ul class="poc-features">
+                <li>Accepts <code>.txt</code> transcript uploads via REST API endpoint</li>
+                <li>Splits and embeds transcript chunks into a Chroma vector store using local HuggingFace embeddings (<code>all-MiniLM-L6-v2</code>)</li>
+                <li>Structured output via Pydantic parser — summary, decisions, and action items with owner &amp; deadline fields</li>
+                <li>LLM-powered via <code>google/gemma-3-12b-it:free</code> through OpenRouter with automatic retry &amp; backoff</li>
+                <li>Fully containerised with Docker Compose (API + Chroma services)</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="poc-section-label"><i class="fas fa-layer-group"></i> Tech Stack</div>
+              <div class="skill-tags" style="margin-bottom:20px;">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">LangChain</span>
+                <span class="skill-tag">Chroma DB</span>
+                <span class="skill-tag">HuggingFace</span>
+                <span class="skill-tag">OpenRouter LLM</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Pydantic</span>
+              </div>
+
+              <div class="poc-section-label"><i class="fas fa-briefcase"></i> Real-World Use Cases</div>
+              <div class="use-cases">
+                <span class="use-case-tag">Corporate meeting automation</span>
+                <span class="use-case-tag">CRM action item extraction</span>
+                <span class="use-case-tag">Legal transcript processing</span>
+                <span class="use-case-tag">HR interview notes</span>
+              </div>
+            </div>
+          </div>
+
+          <hr class="poc-divider" />
+
+          <div class="poc-section-label"><i class="fas fa-diagram-project"></i> Architecture Flow</div>
+          <div class="arch-flow">
+            <span class="arch-step">POST /upload-transcript</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">TextLoader</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">RecursiveCharacterTextSplitter</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">Chroma Vector Store</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">PromptTemplate</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">ChatOpenAI (OpenRouter)</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">PydanticOutputParser</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">MeetingOutput JSON</span>
+          </div>
+
+          <div class="poc-footer">
+            <a href="https://github.com/silypointer/ai_meeting_notes_summerizer" class="poc-github-link" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> silypointer/ai_meeting_notes_summerizer
+            </a>
+            <div class="project-chips">
+              <span class="project-chip">LangChain Pipeline</span>
+              <span class="project-chip">Structured Output</span>
+              <span class="project-chip">Dockerised</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ══════════════════════════════════════════════════════ -->
+        <!-- PROJECT 2: Enterprise Policy Q&A (RAG)                 -->
+        <!-- ══════════════════════════════════════════════════════ -->
+        <article class="poc-card reveal">
+          <div class="poc-header">
+            <div class="poc-icon">🔍</div>
+            <div class="poc-title-block">
+              <div class="poc-title">Enterprise Policy Q&amp;A — RAG System</div>
+              <div class="poc-subtitle">
+                A locally-deployed Retrieval-Augmented Generation pipeline for querying enterprise
+                policy PDFs. Ask natural language questions and receive grounded answers with
+                source citations and LLM-as-judge evaluation metrics.
+              </div>
+            </div>
+            <div class="poc-badges">
+              <span class="poc-badge poc-badge--rag"><i class="fas fa-magnifying-glass"></i> RAG</span>
+              <span class="poc-badge poc-badge--rag"><i class="fas fa-code-branch"></i> Hybrid Retrieval</span>
+            </div>
+          </div>
+
+          <div class="poc-body">
+            <div>
+              <div class="poc-section-label"><i class="fas fa-list-check"></i> Key Capabilities</div>
+              <ul class="poc-features">
+                <li>PDF ingestion via PyMuPDF — parsed, chunked (512 chars / 64 overlap), and embedded locally</li>
+                <li>Hybrid retrieval: dense vector search (Qdrant + <code>BAAI/bge-small-en-v1.5</code>) fused with BM25 keyword search via Reciprocal Rank Fusion (RRF)</li>
+                <li>Cross-encoder reranking with <code>ms-marco-MiniLM-L-6-v2</code> for precision-ranked results</li>
+                <li>Optional LLM query rewriting to expand ambiguous questions before retrieval</li>
+                <li>LLM-as-judge evaluation: faithfulness, context precision, context recall, and answer relevance (scored 0–1)</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="poc-section-label"><i class="fas fa-layer-group"></i> Tech Stack</div>
+              <div class="skill-tags" style="margin-bottom:20px;">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">Qdrant</span>
+                <span class="skill-tag">BM25</span>
+                <span class="skill-tag">Cross-Encoder</span>
+                <span class="skill-tag">PyMuPDF</span>
+                <span class="skill-tag">HuggingFace</span>
+                <span class="skill-tag">OpenRouter LLM</span>
+                <span class="skill-tag">Docker</span>
+              </div>
+
+              <div class="poc-section-label"><i class="fas fa-briefcase"></i> Real-World Use Cases</div>
+              <div class="use-cases">
+                <span class="use-case-tag">HR policy chatbot</span>
+                <span class="use-case-tag">Legal document Q&amp;A</span>
+                <span class="use-case-tag">Compliance assistant</span>
+                <span class="use-case-tag">Internal knowledge base</span>
+              </div>
+            </div>
+          </div>
+
+          <hr class="poc-divider" />
+
+          <div class="poc-section-label"><i class="fas fa-diagram-project"></i> Architecture Flow</div>
+          <div class="arch-flow">
+            <span class="arch-step">PDF Upload</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">PyMuPDF Parser</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">Text Chunker</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">Qdrant (dense) + BM25 (keyword)</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">RRF Fusion</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">Cross-Encoder Reranker</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">LLM Answer Generator</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">Answer + Citations</span>
+          </div>
+
+          <div class="poc-footer">
+            <a href="https://github.com/silypointer/enterprise_policy_qa_rag" class="poc-github-link" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> silypointer/enterprise_policy_qa_rag
+            </a>
+            <div class="project-chips">
+              <span class="project-chip">Hybrid RAG</span>
+              <span class="project-chip">Reranker</span>
+              <span class="project-chip">LLM Evaluation</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ══════════════════════════════════════════════════════ -->
+        <!-- PROJECT 3: AI Lambda Functions                         -->
+        <!-- ══════════════════════════════════════════════════════ -->
+        <article class="poc-card reveal">
+          <div class="poc-header">
+            <div class="poc-icon">⚡</div>
+            <div class="poc-title-block">
+              <div class="poc-title">AI Lambda Functions</div>
+              <div class="poc-subtitle">
+                A collection of serverless AWS Lambda functions that expose AI capabilities —
+                text generation, AI image creation, a conversational chatbot, and a RAG
+                prototype — all powered by Amazon Bedrock foundation models.
+              </div>
+            </div>
+            <div class="poc-badges">
+              <span class="poc-badge poc-badge--lambda"><i class="fas fa-bolt"></i> Serverless</span>
+              <span class="poc-badge poc-badge--lambda"><i class="fab fa-aws"></i> AWS Bedrock</span>
+            </div>
+          </div>
+
+          <div class="poc-body">
+            <div>
+              <div class="poc-section-label"><i class="fas fa-list-check"></i> Functions Included</div>
+              <ul class="poc-features">
+                <li><strong>textGenerationFunction</strong> — Invokes Bedrock Titan Text Express to generate creative or business content from a prompt. Configurable temperature, topP, and token count.</li>
+                <li><strong>moviePosterDesignFunction</strong> — Generates AI movie poster images via Bedrock Titan Image Generator, uploads to S3, and returns a pre-signed URL (30-min expiry).</li>
+                <li><strong>chatbot</strong> — Streamlit + LangChain conversational chatbot backed by AWS Bedrock (Amazon Nova Pro / DeepSeek). Maintains conversation context via <code>ConversationSummaryBufferMemory</code>.</li>
+                <li><strong>rag</strong> — Lightweight RAG prototype with document loading, text splitting, and retrieval-augmented Q&amp;A using Bedrock models.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="poc-section-label"><i class="fas fa-layer-group"></i> Tech Stack</div>
+              <div class="skill-tags" style="margin-bottom:20px;">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">AWS Lambda</span>
+                <span class="skill-tag">AWS Bedrock</span>
+                <span class="skill-tag">Titan Text Express</span>
+                <span class="skill-tag">Titan Image Generator</span>
+                <span class="skill-tag">Amazon S3</span>
+                <span class="skill-tag">LangChain</span>
+                <span class="skill-tag">Streamlit</span>
+                <span class="skill-tag">boto3</span>
+              </div>
+
+              <div class="poc-section-label"><i class="fas fa-briefcase"></i> Real-World Use Cases</div>
+              <div class="use-cases">
+                <span class="use-case-tag">Serverless content generation</span>
+                <span class="use-case-tag">AI image creation APIs</span>
+                <span class="use-case-tag">Embedded chatbots</span>
+                <span class="use-case-tag">Event-driven AI pipelines</span>
+              </div>
+            </div>
+          </div>
+
+          <hr class="poc-divider" />
+
+          <div class="poc-section-label"><i class="fas fa-diagram-project"></i> Architecture Flow</div>
+          <div class="arch-flow">
+            <span class="arch-step">HTTP Event / Trigger</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">AWS Lambda Handler</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">Input Validation</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">Bedrock InvokeModel (boto3)</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">Response Parsing</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">S3 Upload (image) / JSON Response (text)</span>
+          </div>
+
+          <div class="poc-footer">
+            <a href="https://github.com/silypointer/ai_lambda_functions" class="poc-github-link" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> silypointer/ai_lambda_functions
+            </a>
+            <div class="project-chips">
+              <span class="project-chip">Text Generation</span>
+              <span class="project-chip">Image Generation</span>
+              <span class="project-chip">Chatbot</span>
+              <span class="project-chip">RAG Prototype</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ══════════════════════════════════════════════════════ -->
+        <!-- PROJECT 4: Node.js AI Agent                            -->
+        <!-- ══════════════════════════════════════════════════════ -->
+        <article class="poc-card reveal">
+          <div class="poc-header">
+            <div class="poc-icon">🤖</div>
+            <div class="poc-title-block">
+              <div class="poc-title">Node.js AI Agent — ToDo Manager</div>
+              <div class="poc-subtitle">
+                A terminal-based agentic AI application that accepts natural language instructions,
+                maps intent to safe pre-defined database operations, and manages a PostgreSQL-backed
+                todo list — without ever executing LLM-generated SQL.
+              </div>
+            </div>
+            <div class="poc-badges">
+              <span class="poc-badge poc-badge--agent"><i class="fas fa-robot"></i> AI Agent</span>
+              <span class="poc-badge poc-badge--agent"><i class="fas fa-wrench"></i> Tool Calling</span>
+            </div>
+          </div>
+
+          <div class="poc-body">
+            <div>
+              <div class="poc-section-label"><i class="fas fa-list-check"></i> Key Capabilities</div>
+              <ul class="poc-features">
+                <li>Natural language CRUD — create, list, update, delete, and search todos via conversational input</li>
+                <li>Strict tool registry: LLM can only invoke one of 6 pre-defined tools (<code>create_todo</code>, <code>list_todos</code>, <code>update_todo</code>, <code>delete_todo</code>, <code>mark_completed</code>, <code>search_todos</code>)</li>
+                <li>All database operations use parameterised SQL — no raw LLM-generated queries ever reach the database</li>
+                <li>Runtime conversation memory maintains context across the session</li>
+                <li>OpenRouter integration with retry logic, structured logging, and configurable model selection</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="poc-section-label"><i class="fas fa-layer-group"></i> Tech Stack</div>
+              <div class="skill-tags" style="margin-bottom:20px;">
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">OpenRouter LLM</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">Tool Calling</span>
+                <span class="skill-tag">Parameterised SQL</span>
+                <span class="skill-tag">UUID Keys</span>
+                <span class="skill-tag">Conversation Memory</span>
+              </div>
+
+              <div class="poc-section-label"><i class="fas fa-briefcase"></i> Real-World Use Cases</div>
+              <div class="use-cases">
+                <span class="use-case-tag">AI-powered task managers</span>
+                <span class="use-case-tag">Natural language DB interfaces</span>
+                <span class="use-case-tag">Safe agentic CRUD systems</span>
+                <span class="use-case-tag">Internal ops automation</span>
+              </div>
+            </div>
+          </div>
+
+          <hr class="poc-divider" />
+
+          <div class="poc-section-label"><i class="fas fa-diagram-project"></i> Architecture Flow</div>
+          <div class="arch-flow">
+            <span class="arch-step">User Natural Language Input</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">Agent Service</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">OpenRouter LLM (tool_call)</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">Tool Registry Validation</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">Repository Function</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">Parameterised SQL → PostgreSQL</span>
+            <span class="arch-arrow">→</span>
+            <span class="arch-step">Conversational Response</span>
+          </div>
+
+          <div class="poc-footer">
+            <a href="https://github.com/silypointer/nodejs_ai_agent" class="poc-github-link" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> silypointer/nodejs_ai_agent
+            </a>
+            <div class="project-chips">
+              <span class="project-chip">Agentic Architecture</span>
+              <span class="project-chip">Safe Tool Calling</span>
+              <span class="project-chip">Conversation Memory</span>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /.poc-list -->
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- AI ENGINEERING AREAS EXPLORED                              -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="areas" style="background:rgba(255,255,255,0.01);">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <div class="section-tag">// engineering depth</div>
+        <h2 class="section-title">AI Engineering <span class="gradient-text">Areas Explored</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-desc">Patterns and disciplines applied across these PoC projects.</p>
+      </div>
+
+      <div class="areas-grid">
+
+        <div class="area-card reveal delay-1">
+          <div class="area-card-icon">📚</div>
+          <div>
+            <div class="area-card-name">Retrieval-Augmented Generation (RAG)</div>
+            <div class="area-card-desc">Hybrid dense + keyword retrieval, RRF fusion, cross-encoder reranking, and grounded answer generation with source citations.</div>
+          </div>
+        </div>
+
+        <div class="area-card reveal delay-2">
+          <div class="area-card-icon">🎯</div>
+          <div>
+            <div class="area-card-name">LLM Prompt Engineering</div>
+            <div class="area-card-desc">Structured output prompting with Pydantic parsers, query rewriting, system prompt design, and few-shot instruction patterns.</div>
+          </div>
+        </div>
+
+        <div class="area-card reveal delay-3">
+          <div class="area-card-icon">🤖</div>
+          <div>
+            <div class="area-card-name">Agent-Based Workflows</div>
+            <div class="area-card-desc">Tool-calling agents with strict registry validation, conversation memory, safe parameterised database execution, and retry logic.</div>
+          </div>
+        </div>
+
+        <div class="area-card reveal delay-1">
+          <div class="area-card-icon">⚡</div>
+          <div>
+            <div class="area-card-name">Serverless AI Execution</div>
+            <div class="area-card-desc">AWS Lambda functions invoking Bedrock foundation models for text and image generation, with S3 storage and pre-signed URL delivery.</div>
+          </div>
+        </div>
+
+        <div class="area-card reveal delay-2">
+          <div class="area-card-icon">📝</div>
+          <div>
+            <div class="area-card-name">Automated Summarization Pipelines</div>
+            <div class="area-card-desc">End-to-end transcript ingestion, vector embedding, LangChain orchestration, and structured JSON output extraction for meeting notes.</div>
+          </div>
+        </div>
+
+        <div class="area-card reveal delay-3">
+          <div class="area-card-icon">🧪</div>
+          <div>
+            <div class="area-card-name">LLM Evaluation (LLM-as-Judge)</div>
+            <div class="area-card-desc">Automated quality scoring using a secondary LLM to measure faithfulness, context precision, context recall, and answer relevance.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- CONTACT CTA                                                -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="section-header reveal">
+          <div class="section-tag">// get in touch</div>
+          <h2 class="section-title">Interested in <span class="gradient-text">Collaborating?</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-desc">
+            Open to consulting roles, freelance AI projects, and interesting engineering challenges.
+            Drop me a message — I usually respond within 24 hours.
+          </p>
+        </div>
+
+        <div class="contact-cards reveal">
+          <a href="mailto:silypointer@gmail.com" class="contact-card">
+            <div class="contact-card-icon">📧</div>
+            <div class="contact-card-label">Email</div>
+            <div class="contact-card-value">silypointer@gmail.com</div>
+          </a>
+          <a href="https://github.com/silypointer" class="contact-card" target="_blank" rel="noopener">
+            <div class="contact-card-icon">🐙</div>
+            <div class="contact-card-label">GitHub</div>
+            <div class="contact-card-value">github.com/silypointer</div>
+          </a>
+          <a href="index.html" class="contact-card">
+            <div class="contact-card-icon">🗂️</div>
+            <div class="contact-card-label">Portfolio</div>
+            <div class="contact-card-value">View Full Portfolio</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ Footer ░░ -->
+  <footer>
+    <div class="container">
+      <p>Designed &amp; built by <span>Rohan Patil</span> · Mumbai, India · 2026</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
+</body>
+</html>
